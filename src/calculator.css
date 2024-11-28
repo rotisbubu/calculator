@@ -1,0 +1,128 @@
+/* CALCULATOR PAGE */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-container {
+  border: 1px solid #555;
+  overflow: hidden;
+  background-color: #000;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: #555;
+  color: white;
+  height: 150px;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.result {
+  font-size: 40px;
+  margin: 0;
+}
+
+.history {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  text-align: left;
+  color: rgb(163, 163, 163);
+  max-height: 100px;
+  max-width: 300px;
+  overflow-y: auto;
+  width: calc(100% - 20px);
+  padding-right: 5px;
+}
+
+.history::-webkit-scrollbar {
+  width: 5px;
+}
+
+.history.show {
+  opacity: 1;
+  display: block;
+}
+
+.buttons {
+  padding: 20px;
+}
+
+.btn-container1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  background-color: black;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  border-radius: 30px;
+  background-color: #a8a8a8;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-support {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #915858;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-operation {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #ffa500;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding-top: 15px;
+}
+
+.btn-zero {
+  border-radius: 30px;
+  background-color: #a8a8a8;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  height: 50px;
+}
+
+.btn-equal {
+  border-radius: 30px;
+  background-color: #ffa500;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+}

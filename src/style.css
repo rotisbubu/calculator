@@ -1,0 +1,198 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* --- Support Page --- */
+.support-form {
+  padding: 20px;
+  width: 700px;
+}
+
+.support-form h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid;
+  margin: 20px 0;
+  width: 90%;
+}
+
+.form-container {
+  display: flex;
+  gap: 50px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.name-fields input {
+  flex: 1;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid;
+  border-color: white;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid #ffa500;
+}
+
+.input-email {
+  width: 320px;
+}
+
+textarea {
+  height: 252px;
+  width: 300px;
+}
+
+.radio-group {
+  gap: 10px;
+  border: 1px solid;
+  border-color: white;
+  border-radius: 4px;
+  border-style: dotted;
+  padding: 20px;
+}
+.text {
+  text-align: left;
+}
+
+.radio-part {
+  display: flex;
+}
+
+.radio-part input {
+  width: 10px;
+  margin-bottom: 10px;
+}
+
+.radio-group label {
+  padding-top: 2px;
+}
+
+input[type="radio"]:checked {
+  accent-color: #ffa500;
+}
+
+.desc-label {
+  display: flex;
+}
+
+.optional {
+  font-size: 12px;
+  padding-left: 5px;
+  color: #636363;
+}
+
+.submit-btn {
+  background-color: #ffa500;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  margin-top: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  float: right;
+}
+
+button:disabled {
+  background-color: #444;
+  cursor: not-allowed;
+}
+
+.required {
+  color: red;
+}
+
+.message {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: red;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.modal-content h3,
+p {
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* --- SupportTicket Page --- */
+.support-message {
+  padding-top: 50px;
+}
+
+.support-message h1 {
+  color: #ffa500;
+  text-align: center;
+}
+
+.support-message p {
+  text-align: center;
+}
